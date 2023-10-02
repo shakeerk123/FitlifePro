@@ -9,7 +9,7 @@ class TextConstants {
   static const String onboarding2 = "Elevate, Conquer, Thrive";
   static const String onboarding3 = "Achieve More, Together";
   static const String onboardingMessage = "Join our FitLife Pro community and unlock your full potential with the support of like-minded individuals. Together, we'll reach new heights in fitness and well-being, making progress a shared journey";
-  static const String onboardingMessage3 = "Elevate your strength, endurance, and well-being as you embark on a path to unlock your true potential. Embrace the transformation today";
+  static const String onboardingMessage3 = "Elevate your strength, endurance, and well-being as you embark on a path to unlock your true potential. Embrace the transformation today.if you give up now you will be in pain forever";
   static const String onboardingMessage2 = "Elevate your fitness levels, conquer your goals, and thrive in a healthier, happier lifestyle.Transform your life one step at a time, and embrace the journey towards a stronger, more vibrant you.";
   static const String welcomeMessage = "Hello, dear! Welcome to the most delightful fitness journey.";
   static const String exerciseTitle = "Exercises";
@@ -62,10 +62,12 @@ class FontConstants {
     letterSpacing:0.5
   );
 
-  static const TextStyle bodyText1 = TextStyle(
-    fontSize: 16,
+  static const TextStyle skip = TextStyle(
+    fontFamily:"Poppins-Light" ,
+    fontSize:14,
     fontWeight: FontWeight.normal,
-    color: Colors.black,
+    color: Color.fromARGB(255, 102, 99, 99),
+    letterSpacing:0.5
   );
 
   static const TextStyle bodyText2 = TextStyle(

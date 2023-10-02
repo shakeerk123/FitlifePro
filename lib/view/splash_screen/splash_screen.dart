@@ -1,7 +1,7 @@
 import 'package:fitness_app/utils/color.dart';
-
+import 'package:fitness_app/view/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
 import '../../utils/text_constanst.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -45,10 +45,11 @@ class SplashScreen extends StatelessWidget {
               height: 60,
               child: ElevatedButton(
                 onPressed: () {
-                  // Add your navigation logic here
+                  Get.to(OnBoardingScreen());
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: FitnessAppColors.logoColor, // Button background color
+                  backgroundColor:
+                      FitnessAppColors.logoColor, // Button background color
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30.0), // Rounded border
                   ),
