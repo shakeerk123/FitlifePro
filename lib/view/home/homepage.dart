@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fitness_app/utils/color.dart'; // Note the corrected import
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 import '../../utils/text_constanst.dart';
 import '../../widgets/gradientShade.dart';
@@ -136,18 +137,124 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(15)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5), // Shadow color
+                          spreadRadius: 1, // Spread radius
+                          blurRadius: 7, // Blur radius
+                          offset: const Offset(0, 0), // Offset
+                        ),
+                      ],
+                    ),
+                    child: const Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        GradientShade(
+                          color1: FitnessAppColors.logoColor,
+                          color2: FitnessAppColors.logoColor2,
+                          gradientText: 'In progress',
+                          style: FontConstants.title2,
+                        ),
+                        GradientShade(
+                          color1: FitnessAppColors.logoColor,
+                          color2: FitnessAppColors.logoColor2,
+                          gradientText: '2',
+                          style: FontConstants.bigNumber,
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
                     decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(15)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5), // Shadow color
+                          spreadRadius: 1, // Spread radius
+                          blurRadius: 7, // Blur radius
+                          offset: const Offset(0, 0), // Offset
+                        ),
+                      ],
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 15, top: 15),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Water Intake",
+                            style: FontConstants.title,
+                          ),
+                          SizedBox(height: 10,),
+                          GradientShade(
+                            color1: FitnessAppColors.logoColor,
+                            color2: FitnessAppColors.logoColor2,
+                            gradientText: '8 Litres',
+                            style: FontConstants.title2,
+                          ),
+                          SizedBox(height: 10,),
+                          Center(
+                              child: CircularPercentIndicator(
+                                
+                            radius: 40,
+                            lineWidth: 12,
+                            percent: 0.4,
+                            progressColor:FitnessAppColors.logoColor ,
+                            backgroundColor: Color.fromARGB(255, 245, 240, 240),
+                            circularStrokeCap: CircularStrokeCap.round,
+                            center: Text("4 litres\n left",style: FontConstants.small,),
+                          )),
+                        ],
+                      ),
+                    ),
                   ),
-                  Container(
+                 Container(
                     decoration: BoxDecoration(
-                        color: Colors.amber,
-                        borderRadius: BorderRadius.circular(15)),
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(30),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5), // Shadow color
+                          spreadRadius: 1, // Spread radius
+                          blurRadius: 7, // Blur radius
+                          offset: const Offset(0, 0), // Offset
+                        ),
+                      ],
+                    ),
+                    child: Padding(
+                      padding: EdgeInsets.only(left: 15, top: 15),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Calories",
+                            style: FontConstants.title,
+                          ),
+                          SizedBox(height: 10,),
+                          GradientShade(
+                            color1: FitnessAppColors.logoColor,
+                            color2: FitnessAppColors.logoColor2,
+                            gradientText: '760 kCal',
+                            style: FontConstants.title2,
+                          ),
+                          SizedBox(height: 10,),
+                          Center(
+                              child: CircularPercentIndicator(
+                                
+                            radius: 40,
+                            lineWidth: 12,
+                            percent: 0.8,
+                            progressColor:FitnessAppColors.logoColor ,
+                            backgroundColor: Color.fromARGB(255, 245, 240, 240),
+                            circularStrokeCap: CircularStrokeCap.round,
+                            center: Text("230kCal\n left",style: FontConstants.small,),
+                          )),
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),

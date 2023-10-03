@@ -38,8 +38,6 @@ dependencies:
   get: ^4.6.5
   intro_screen_onboarding_flutter: ^1.0.0
   carousel_slider: ^4.2.1
-  
-  flutter_animation_progress_bar: ^2.3.1
   percent_indicator: ^4.2.3
   google_nav_bar: ^5.0.6
   

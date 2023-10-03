@@ -120,6 +120,13 @@ class FontConstants {
     color: Colors.white,
     letterSpacing:0.2
   );
+  static const TextStyle small = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:9,
+    fontWeight: FontWeight.w400,
+    color: Colors.black,
+    letterSpacing:0.2
+  );
    static const TextStyle subTitle = TextStyle(
     fontFamily:"Poppins" ,
     fontSize:12,
