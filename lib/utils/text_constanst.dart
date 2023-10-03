@@ -11,7 +11,7 @@ class TextConstants {
   static const String onboardingMessage = "Join our FitLife Pro community and unlock your full potential with the support of like-minded individuals. Together, we'll reach new heights in fitness and well-being, making progress a shared journey";
   static const String onboardingMessage3 = "Elevate your strength, endurance, and well-being as you embark on a path to unlock your true potential. Embrace the transformation today.if you give up now you will be in pain forever";
   static const String onboardingMessage2 = "Elevate your fitness levels, conquer your goals, and thrive in a healthier, happier lifestyle.Transform your life one step at a time, and embrace the journey towards a stronger, more vibrant you.";
-  static const String welcomeMessage = "Hello, dear! Welcome to the most delightful fitness journey.";
+  static const String welcomeMessage = "Welcome Back,";
   static const String exerciseTitle = "Exercises";
   static const String workoutTitle = "Workouts";
   static const String nutritionTitle = "Nutrition";
@@ -34,7 +34,7 @@ class TextConstants {
 
 class FontConstants {
   static const TextStyle headline1 = TextStyle(
-    fontFamily:"Poppins" ,
+    fontFamily:"Poppins-Light" ,
     fontSize: 50,
     fontWeight: FontWeight.bold,
     color: Colors.white,
@@ -46,12 +46,31 @@ class FontConstants {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
+  static const TextStyle name = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 25,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
+  static const TextStyle bigNumber = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 60,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
+  static const TextStyle thinBold = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    color: Colors.black,
+  );
 
   static const TextStyle headline2 = TextStyle(
     fontFamily:"Poppins-Light" ,
-    fontSize:19 ,
+    fontSize:17 ,
     fontWeight: FontWeight.normal,
     color: Colors.grey,
+    letterSpacing:0.5
   );
 
   static const TextStyle onBoardingPara = TextStyle(
@@ -83,5 +102,29 @@ class FontConstants {
     fontSize: 20,
     fontWeight: FontWeight.w600,
     color: Colors.blue,
+    
+  );
+
+   static const TextStyle title = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:14,
+    fontWeight: FontWeight.w400,
+    color: Color.fromARGB(255, 34, 30, 30),
+    letterSpacing:0.2
+  );
+
+  static const TextStyle title2 = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:14,
+    fontWeight: FontWeight.w400,
+    color: Colors.white,
+    letterSpacing:0.2
+  );
+   static const TextStyle subTitle = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:12,
+    fontWeight: FontWeight.w600,
+    color: Color.fromARGB(255, 34, 30, 30),
+    letterSpacing:0.6
   );
 }

@@ -40,6 +40,7 @@ class SplashScreen extends StatelessWidget {
             bottom: 80.0, // Adjust the position as needed
             left: 30.0,
             right: 30.0,
+            // ignore: sized_box_for_whitespace
             child: Container(
               width: 315,
               height: 60,
