@@ -1,6 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import '../utils/text_constanst.dart';
+import '../../utils/text_constanst.dart';
 
 class HomePageCard extends StatelessWidget {
   final String imagePath;
@@ -68,11 +68,11 @@ class HomePageCard extends StatelessWidget {
               ],
             ),
             const SizedBox(
-              width: 20,
+              width: 5,
             ),
             Container(
               height: 110,
-              width: 110,
+              width: 105,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(60),

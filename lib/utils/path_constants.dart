@@ -5,7 +5,10 @@ class AppPaths {
 
   // Images
   static const String logoImage = '${imagePath}logo.png';
-  static const String workoutImage = '${imagePath}workout.png';
+  static const String workoutImage = '${imagePath}Vector.png';
+  static const String google = '${imagePath}google.png';
+  static const String registerImage = '${imagePath}VectorSection.png';
+  static const String successRegisterImage = '${imagePath}Group.png';
 
   // Fonts
   static const String defaultFont = '${fontPath}Roboto-Regular.ttf';

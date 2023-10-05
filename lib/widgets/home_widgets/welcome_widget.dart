@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 
-import '../utils/text_constanst.dart';
+import '../../utils/text_constanst.dart';
 
 class WelcomeWidget extends StatelessWidget {
   const WelcomeWidget({

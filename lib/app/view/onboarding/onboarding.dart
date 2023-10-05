@@ -1,14 +1,14 @@
 import 'package:fitness_app/utils/text_constanst.dart';
-import 'package:fitness_app/view/splash_screen/splash_screen.dart';
+import 'package:fitness_app/app/view/splash_screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intro_screen_onboarding_flutter/intro_app.dart';
-
-import '../../utils/color.dart';
+import '../../../utils/color.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   final List<Introduction> list = [
     Introduction(
+      
         imageUrl: 'assets/images/Frame1.png',
         titleTextStyle: FontConstants.onBoarding,
         title: TextConstants.onboarding1,

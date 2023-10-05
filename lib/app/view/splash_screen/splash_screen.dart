@@ -1,8 +1,8 @@
 import 'package:fitness_app/utils/color.dart';
-import 'package:fitness_app/view/onboarding/onboarding.dart';
+import 'package:fitness_app/app/view/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../utils/text_constanst.dart';
+import '../../../utils/text_constanst.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

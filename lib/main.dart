@@ -1,4 +1,6 @@
-import 'package:fitness_app/view/home/homepage.dart';
+
+import 'package:fitness_app/app/view/register/register_page2.dart';
+import 'package:fitness_app/app/view/register/success_registration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -14,9 +16,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return  const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:HomeScreen(),
+      home:RegisterPageTwo(),
     );
   }
 }

@@ -12,6 +12,7 @@ class TextConstants {
   static const String onboardingMessage3 = "Elevate your strength, endurance, and well-being as you embark on a path to unlock your true potential. Embrace the transformation today.if you give up now you will be in pain forever";
   static const String onboardingMessage2 = "Elevate your fitness levels, conquer your goals, and thrive in a healthier, happier lifestyle.Transform your life one step at a time, and embrace the journey towards a stronger, more vibrant you.";
   static const String welcomeMessage = "Welcome Back,";
+  static const String registerMessage = "It will help us to know more about you!";
   static const String exerciseTitle = "Exercises";
   static const String workoutTitle = "Workouts";
   static const String nutritionTitle = "Nutrition";
@@ -52,6 +53,12 @@ class FontConstants {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
+  static const TextStyle namesmallSize = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
   static const TextStyle bigNumber = TextStyle(
     fontFamily:"Poppins" ,
     fontSize: 60,
@@ -72,9 +79,16 @@ class FontConstants {
     color: Colors.grey,
     letterSpacing:0.5
   );
+  static const TextStyle  thickThin = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:19 ,
+    fontWeight: FontWeight.normal,
+    color: Colors.black,
+    letterSpacing:0.5
+  );
 
   static const TextStyle onBoardingPara = TextStyle(
-    fontFamily:"Poppins-Light" ,
+    fontFamily:"Poppins" ,
     fontSize:14 ,
     fontWeight: FontWeight.normal,
     color: FitnessAppColors.textSecondaryColor,
@@ -82,7 +96,7 @@ class FontConstants {
   );
 
   static const TextStyle skip = TextStyle(
-    fontFamily:"Poppins-Light" ,
+    fontFamily:"Poppins" ,
     fontSize:14,
     fontWeight: FontWeight.normal,
     color: Color.fromARGB(255, 102, 99, 99),
@@ -125,6 +139,20 @@ class FontConstants {
     fontSize:9,
     fontWeight: FontWeight.w400,
     color: Colors.black,
+    letterSpacing:0.2
+  );
+  static const TextStyle smallthin = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:11,
+    fontWeight: FontWeight.w400,
+    color: Colors.grey,
+    letterSpacing:0.2
+  );
+   static const TextStyle smallthinBold = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:20,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
     letterSpacing:0.2
   );
    static const TextStyle subTitle = TextStyle(
