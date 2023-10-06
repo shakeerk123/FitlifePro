@@ -18,7 +18,8 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: Container(color:Colors.white12 ,
+        bottomNavigationBar: Container(
+          color: Colors.white12,
           child: const Padding(
             padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
             child: GNav(
@@ -45,6 +46,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         body: ListView(
+          physics: const BouncingScrollPhysics(),
           children: [
             const WelcomeWidget(),
             const SizedBox(height: 10),
@@ -111,19 +113,19 @@ class HomeScreen extends StatelessWidget {
               percent: 0.5,
               subTitle: '100 kCal Burn | 20 min',
             ),
-             const WorkoutWidget(
+            const WorkoutWidget(
               title: 'Upperbody Workout',
               path: AssetImage(AppPaths.workoutImage),
               percent: 0.3,
               subTitle: '100 kCal Burn | 20 min',
             ),
-             const WorkoutWidget(
+            const WorkoutWidget(
               title: 'Upperbody Workout',
               path: AssetImage(AppPaths.workoutImage),
               percent: 0.7,
               subTitle: '100 kCal Burn | 20 min',
             ),
-             const WorkoutWidget(
+            const WorkoutWidget(
               title: 'Upperbody Workout',
               path: AssetImage(AppPaths.workoutImage),
               percent: 0.9,
