@@ -1,5 +1,5 @@
 
-import 'package:fitness_app/app/view/register/register_page2.dart';
+import 'package:fitness_app/app/view/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:RegisterPageTwo(),
+      home:ProfileScreen(),
     );
   }
 }

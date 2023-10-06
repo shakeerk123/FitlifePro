@@ -67,7 +67,7 @@ class FontConstants {
   );
   static const TextStyle thinBold = TextStyle(
     fontFamily:"Poppins" ,
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: FontWeight.w600,
     color: Colors.black,
   );
@@ -132,6 +132,14 @@ class FontConstants {
     fontSize:14,
     fontWeight: FontWeight.w400,
     color: Colors.white,
+    letterSpacing:0.2
+  );
+
+  static const TextStyle title3 = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:16,
+    fontWeight: FontWeight.w400,
+    color: Colors.black,
     letterSpacing:0.2
   );
   static const TextStyle small = TextStyle(

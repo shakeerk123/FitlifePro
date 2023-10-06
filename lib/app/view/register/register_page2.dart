@@ -6,7 +6,6 @@ import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import '../../../utils/color.dart';
 import '../../../utils/text_constanst.dart';
-import '../../../widgets/register_widgets/dropdown.dart';
 
 class RegisterPageTwo extends StatelessWidget {
   const RegisterPageTwo({super.key});
@@ -43,7 +42,6 @@ class RegisterPageTwo extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const GenderDropdownFormField(),
                 const TextFieldWidget(
                     prefixicon: Icon(IconlyLight.calendar),
                     text: "Your Age",
