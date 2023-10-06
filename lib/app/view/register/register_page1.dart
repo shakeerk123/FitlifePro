@@ -65,7 +65,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 TextFieldWidget(
-                  prefixicon: Icon(IconlyLight.lock),
+                  prefixicon: const Icon(IconlyLight.lock),
                   text: 'Password',
                   obscureText: _isObscure,
                   suffixicon: IconButton(

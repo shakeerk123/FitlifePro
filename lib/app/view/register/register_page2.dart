@@ -28,8 +28,8 @@ class RegisterPageTwo extends StatelessWidget {
                     
                     AppPaths.registerImage),
                 ),
-                SizedBox(height: 20,),
-                Text(
+                const SizedBox(height: 20,),
+                const Text(
                   "Let's complete your profile",
                   style: FontConstants.namesmallSize,
                 ),
@@ -71,7 +71,7 @@ class RegisterPageTwo extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Get.to(RegisterScreen());
+                      Get.to(const RegisterScreen());
                     },
                     child: const Text(
                       "Next",

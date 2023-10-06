@@ -2,10 +2,9 @@ import 'package:fitness_app/app/view/home/homepage.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../../utils/color.dart';
 import '../../../utils/text_constanst.dart';
-import 'register_page1.dart';
+
 
 class SuccessRegistrationScreen extends StatelessWidget {
   const SuccessRegistrationScreen({super.key});
@@ -17,15 +16,15 @@ class SuccessRegistrationScreen extends StatelessWidget {
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Image.asset(AppPaths.successRegisterImage),
            const SizedBox(height: 40,),
-          Text(
+          const Text(
             "Wecome, Stefani",
             style: FontConstants.name,
           ),
-          Text(
+          const Text(
             "You are all set now, let’s reach your",
             style: FontConstants.smallthin,
           ),
-          Text(
+          const Text(
             "goals together with us",
             style: FontConstants.smallthin,
           ),
@@ -46,7 +45,7 @@ class SuccessRegistrationScreen extends StatelessWidget {
                 ),
               ),
               onPressed: () {
-                Get.to(HomeScreen());
+                Get.to(const HomeScreen());
               },
               child: const Text(
                 "Go to Home",

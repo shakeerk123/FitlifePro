@@ -1,6 +1,5 @@
 
 import 'package:fitness_app/app/view/register/register_page2.dart';
-import 'package:fitness_app/app/view/register/success_registration.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
