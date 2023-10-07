@@ -18,59 +18,74 @@ class WorkoutScreen extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Column(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 50, left: 25, right: 25),
-                      child: Container(
-                        color: FitnessAppColors.logoColor2,
-                        child: Stack(
-                          alignment: Alignment.center,
-                          children: [
-                            // Workout animation
-                            Lottie.asset(AppPaths.particleLottie),
-                            Lottie.asset(
-                                AppPaths.workoutvectorImage), // Particle animation
-                          ],
-                        ),
-                      ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 90, left: 25, right: 25),
+                  child: Container(
+                    width: double.infinity,
+                    color: FitnessAppColors.logoColor2,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        // Workout animation
+                        Lottie.asset(AppPaths.particleLottie, width: 400),
+                        Lottie.asset(AppPaths.workoutvectorImage, width: 220), // Particle animation
+                      ],
                     ),
-                  ],
+                  ),
                 ),
                 Positioned(
-                  top: 25,
-                  left: 25,
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: FitnessAppColors.box,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        Get.to(const HomeScreen());
-                      },
-                      icon: const Icon(IconlyLight.arrow_left_2),
-                    ),
+                  top: 30,
+                  left: 0,
+                  right: 0,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(left: 20),
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: FitnessAppColors.box,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: IconButton(
+                            onPressed: () {
+                              Get.to(const HomeScreen());
+                            },
+                            icon: const Icon(IconlyLight.arrow_left_2),
+                          ),
+                        ),
+                      ),
+                      Text(
+                        "Workout",
+                        style: TextStyle(
+                          fontSize: 20, // Adjust the font size as needed
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      SizedBox(width: 40), // You can add other widgets here if needed
+                    ],
                   ),
                 ),
               ],
             ),
             Expanded(
               child: Container(
-                
                 decoration: const BoxDecoration(
                   color: Colors.white,
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(20),
-                topRight: Radius.circular(20))
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30),
+                    topRight: Radius.circular(30),
+                  ),
+                ),
+                width: double.infinity,
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+                  child: Text("What Do You Want to Train"),
+                ),
               ),
-                
-                height: double.infinity,),
-            )
+            ),
           ],
-          
         ),
-        
-
       ),
     );
   }
