@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 GButton(
                   icon: IconlyLight.graph,
-                  text: "Statistics",
+                  text: "Workout",
                 ),
                 GButton(
                   icon: IconlyLight.profile,

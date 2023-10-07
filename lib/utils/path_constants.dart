@@ -9,6 +9,9 @@ class AppPaths {
   static const String google = '${imagePath}google.png';
   static const String registerImage = '${imagePath}VectorSection.png';
   static const String successRegisterImage = '${imagePath}Group.png';
+  static const String weightImage = '${imagePath}Weights.gif';
+  static const String workoutvectorImage = '${imagePath}lottie.json';
+  static const String particleLottie = '${imagePath}overlay (2).json';
 
   // Fonts
   static const String defaultFont = '${fontPath}Roboto-Regular.ttf';

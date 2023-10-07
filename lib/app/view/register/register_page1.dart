@@ -69,7 +69,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   text: 'Password',
                   obscureText: _isObscure,
                   suffixicon: IconButton(
+                    splashColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
                     icon: Icon(
+                      
                       _isObscure ? Icons.visibility : Icons.visibility_off,
                       color:
                           Colors.grey, // You can customize the icon color here.

@@ -79,7 +79,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 InkWell(
                   borderRadius: BorderRadius.circular(10),
                   onTap: (){
-                    print("ddd");
                   },
                   child: const Text(
                     "Forgot your password?",
