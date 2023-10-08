@@ -20,7 +20,7 @@ class GridWidget extends StatelessWidget {
           crossAxisSpacing: 25,
           crossAxisCount: 2,
         ),
-        shrinkWrap: true, // Add this line to prevent infinite height
+        shrinkWrap: true, // Add this line to prevent infinite height 
         physics:
             const NeverScrollableScrollPhysics(), // Disable scrolling
         children: [

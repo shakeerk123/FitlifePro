@@ -24,7 +24,7 @@ class WorkoutScreen extends StatelessWidget {
             Stack(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 90, left: 25, right: 25),
+                  padding: const EdgeInsets.only(top: 90, left: 45, right: 45),
                   child: Container(
                     width: double.infinity,
                     color: FitnessAppColors.logoColor2,
@@ -84,7 +84,7 @@ class WorkoutScreen extends StatelessWidget {
                 ),
                 width: double.infinity,
                 child:  Padding(
-                  padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
+                  padding: const EdgeInsets.only(top: 20, left: 40, right: 40),
                   child: SingleChildScrollView(physics: const BouncingScrollPhysics(),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
