@@ -4,7 +4,6 @@ import 'package:fitness_app/utils/color.dart';
 import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconly/iconly.dart';
 import 'package:lottie/lottie.dart';
 
@@ -98,7 +97,7 @@ class WorkoutScreen extends StatelessWidget {
                           height: 30,
                         ),
                         GestureDetector(onTap: ( ){
-                          Get.to(HomeScreen());
+                          Get.to(const HomeScreen());
                         },
                           child: const HomePageCard(
                             colour: FitnessAppColors.logoColor2,

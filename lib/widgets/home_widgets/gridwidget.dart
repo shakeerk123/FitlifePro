@@ -13,11 +13,11 @@ class GridWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
+      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
       child: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-          mainAxisSpacing: 19,
-          crossAxisSpacing: 19,
+          mainAxisSpacing: 25,
+          crossAxisSpacing: 25,
           crossAxisCount: 2,
         ),
         shrinkWrap: true, // Add this line to prevent infinite height

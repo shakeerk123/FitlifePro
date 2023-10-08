@@ -2,8 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fitness_app/utils/color.dart'; // Note the corrected import
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:flutter/material.dart';
-import 'package:google_nav_bar/google_nav_bar.dart';
-import 'package:iconly/iconly.dart';
 import '../../../utils/text_constanst.dart';
 import '../../../widgets/home_widgets/gridwidget.dart';
 import '../../../widgets/home_widgets/homepagemaincard.dart';

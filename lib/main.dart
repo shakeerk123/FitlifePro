@@ -1,6 +1,6 @@
 
 import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
-import 'package:fitness_app/app/view/workout_tracker/workouttracker_screen.dart';
+import 'package:fitness_app/app/view/register/register_page1.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

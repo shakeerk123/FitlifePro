@@ -11,6 +11,7 @@ class GnavNavigation extends StatefulWidget {
   const GnavNavigation({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomeScreenState createState() => _HomeScreenState();
 }
 
@@ -19,9 +20,9 @@ class _HomeScreenState extends State<GnavNavigation> {
 
   // Define your list of routes/screens
   final List<Widget> _screens = [
-    HomeScreen(),
-    WorkoutScreen(),
-    ProfileScreen(),
+    const HomeScreen(),
+    const WorkoutScreen(),
+    const ProfileScreen(),
   ];
 
   @override
@@ -40,7 +41,7 @@ class _HomeScreenState extends State<GnavNavigation> {
               activeColor: Colors.blue,
               gap: 8,
               padding: const EdgeInsets.all(16),
-              tabs: [
+              tabs: const [
                 GButton(
                   icon: IconlyLight.home,
                   text: "Home",
