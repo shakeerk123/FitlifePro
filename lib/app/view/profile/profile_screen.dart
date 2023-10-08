@@ -1,12 +1,12 @@
-import 'package:fitness_app/app/view/profile/user_name.dart';
+import 'package:fitness_app/widgets/profile_widgets/user_name.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import '../../../utils/color.dart';
 import '../../../utils/text_constanst.dart';
 import '../../../widgets/profile_widgets/gridbox_profile.dart';
-import 'logout_widget.dart';
-import 'profile_bar.dart';
+import '../../../widgets/profile_widgets/logout_widget.dart';
+import '../../../widgets/profile_widgets/profile_bar.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -21,6 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
           child: Column(

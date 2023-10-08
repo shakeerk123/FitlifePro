@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../utils/color.dart';
-import '../../../utils/text_constanst.dart';
+import '../../utils/color.dart';
+import '../../utils/text_constanst.dart';
 
 class ProfileBarTop extends StatelessWidget {
   final String title;

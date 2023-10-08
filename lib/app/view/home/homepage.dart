@@ -18,33 +18,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: Container(
-          color: Colors.white12,
-          child: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 15, vertical: 20),
-            child: GNav(
-              backgroundColor: Colors.white12,
-              activeColor: Colors.black,
-              gap: 8,
-              tabBackgroundColor: FitnessAppColors.card1,
-              padding: EdgeInsets.all(16),
-              tabs: [
-                GButton(
-                  icon: IconlyLight.home,
-                  text: "Home",
-                ),
-                GButton(
-                  icon: IconlyLight.graph,
-                  text: "Workout",
-                ),
-                GButton(
-                  icon: IconlyLight.profile,
-                  text: "Profile",
-                ),
-              ],
-            ),
-          ),
-        ),
+        
         body: ListView(
           physics: const BouncingScrollPhysics(),
           children: [

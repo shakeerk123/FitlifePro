@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../utils/text_constanst.dart';
+import '../../utils/text_constanst.dart';
 
 class LogoutWidget extends StatelessWidget {
   const LogoutWidget({

@@ -1,10 +1,15 @@
 import 'package:fitness_app/app/view/home/homepage.dart';
 import 'package:fitness_app/utils/color.dart';
-import 'package:fitness_app/utils/path_constants.dart';
+
+import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconly/iconly.dart';
 import 'package:lottie/lottie.dart';
+
+import '../../../utils/path_constants.dart';
+import '../../../widgets/home_widgets/homepagemaincard.dart';
 
 class WorkoutScreen extends StatelessWidget {
   const WorkoutScreen({super.key});
@@ -13,6 +18,7 @@ class WorkoutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+       
         backgroundColor: FitnessAppColors.logoColor2,
         body: Column(
           children: [
@@ -28,7 +34,8 @@ class WorkoutScreen extends StatelessWidget {
                       children: [
                         // Workout animation
                         Lottie.asset(AppPaths.particleLottie, width: 400),
-                        Lottie.asset(AppPaths.workoutvectorImage, width: 220), // Particle animation
+                        Lottie.asset(AppPaths.workoutvectorImage,
+                            width: 220), // Particle animation
                       ],
                     ),
                   ),
@@ -55,14 +62,13 @@ class WorkoutScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Workout",
-                        style: TextStyle(
-                          fontSize: 20, // Adjust the font size as needed
-                          fontWeight: FontWeight.bold,
-                        ),
+                        style: FontConstants.namesmallSizewhite,
                       ),
-                      SizedBox(width: 40), // You can add other widgets here if needed
+                      const SizedBox(
+                          width:
+                              40), // You can add other widgets here if needed
                     ],
                   ),
                 ),
@@ -70,7 +76,7 @@ class WorkoutScreen extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                decoration: const BoxDecoration(
+                decoration:  const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(30),
@@ -78,9 +84,50 @@ class WorkoutScreen extends StatelessWidget {
                   ),
                 ),
                 width: double.infinity,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-                  child: Text("What Do You Want to Train"),
+                child:  Padding(
+                  padding: const EdgeInsets.only(top: 20, left: 30, right: 30),
+                  child: SingleChildScrollView(physics: const BouncingScrollPhysics(),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "What Do You Want to Train",
+                          style: FontConstants.thinBold,
+                        ),
+                        const SizedBox(
+                          height: 30,
+                        ),
+                        GestureDetector(onTap: ( ){
+                          Get.to(HomeScreen());
+                        },
+                          child: const HomePageCard(
+                            colour: FitnessAppColors.logoColor2,
+                            imagePath: 'assets/images/Vector (1).png',
+                            subTitle: '160 Cal Burn | 13 min',
+                            title: 'Lowerbody Workouts',
+                          ),
+                        ),
+                        const HomePageCard(
+                          colour: FitnessAppColors.logoColor2,
+                          imagePath: 'assets/images/Vector (1).png',
+                          subTitle: '160 Cal Burn | 13 min',
+                          title: 'Lowerbody Workouts',
+                        ),
+                        const HomePageCard(
+                          colour: FitnessAppColors.logoColor2,
+                          imagePath: 'assets/images/Vector (1).png',
+                          subTitle: '160 Cal Burn | 13 min',
+                          title: 'Lowerbody Workouts',
+                        ),
+                        const HomePageCard(
+                          colour: FitnessAppColors.logoColor2,
+                          imagePath: 'assets/images/Vector (1).png',
+                          subTitle: '160 Cal Burn | 13 min',
+                          title: 'Lowerbody Workouts',
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),

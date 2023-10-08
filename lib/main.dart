@@ -1,4 +1,5 @@
 
+import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
 import 'package:fitness_app/app/view/workout_tracker/workouttracker_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return   const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:WorkoutScreen(),
+      home:GnavNavigation(),
     );
   }
 }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/color.dart';
-import '../../../utils/text_constanst.dart';
+import '../../utils/color.dart';
+import '../../utils/text_constanst.dart';
 
 class UserNameWidget extends StatelessWidget {
   final String username;

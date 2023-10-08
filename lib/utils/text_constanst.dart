@@ -59,6 +59,12 @@ class FontConstants {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
+  static const TextStyle namesmallSizewhite = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 22,
+    fontWeight: FontWeight.bold,
+    color: Colors.white,
+  );
   static const TextStyle bigNumber = TextStyle(
     fontFamily:"Poppins" ,
     fontSize: 60,
@@ -133,6 +139,13 @@ class FontConstants {
     fontWeight: FontWeight.w400,
     color: Colors.white,
     letterSpacing:0.2
+  );
+  static const TextStyle gnav = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:10,
+    fontWeight: FontWeight.w400,
+    color: Colors.blue,
+    
   );
 
   static const TextStyle title3 = TextStyle(
