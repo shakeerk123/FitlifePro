@@ -1,28 +1,26 @@
-import 'package:fitness_app/app/view/home/homepage.dart';
-import 'package:fitness_app/app/view/profile/profile_screen.dart';
-import 'package:fitness_app/app/view/workout_tracker/workouttracker_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconly/iconly.dart';
 
 import '../../../utils/text_constanst.dart';
+import '../home/homepage.dart';
+import '../profile/profile_screen.dart';
+import '../workout_tracker/workouttracker_screen.dart';
 
 class GnavNavigation extends StatefulWidget {
   const GnavNavigation({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
-  _HomeScreenState createState() => _HomeScreenState();
+  _GnavNavigationState createState() => _GnavNavigationState();
 }
 
-class _HomeScreenState extends State<GnavNavigation> {
+class _GnavNavigationState extends State<GnavNavigation> {
   int _currentIndex = 0;
 
-  // Define your list of routes/screens
-  final List<Widget> _screens = [
-    const HomeScreen(),
-    const WorkoutScreen(),
-    const ProfileScreen(),
+  final List<Widget> _screens = const [
+    HomeScreen(),
+    WorkoutScreen(),
+    ProfileScreen(),
   ];
 
   @override
@@ -55,9 +53,8 @@ class _HomeScreenState extends State<GnavNavigation> {
                   text: "Profile",
                 ),
               ],
-              selectedIndex: _currentIndex, // Set the current index
+              selectedIndex: _currentIndex,
               onTabChange: (index) {
-                // Update the current index and navigate to the corresponding screen
                 setState(() {
                   _currentIndex = index;
                 });
@@ -65,7 +62,10 @@ class _HomeScreenState extends State<GnavNavigation> {
             ),
           ),
         ),
-        body: _screens[_currentIndex], // Display the selected screen
+        body: IndexedStack(
+          index: _currentIndex,
+          children: _screens,
+        ),
       ),
     );
   }

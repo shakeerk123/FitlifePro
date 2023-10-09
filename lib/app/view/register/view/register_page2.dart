@@ -1,11 +1,11 @@
 import 'package:fitness_app/utils/path_constants.dart';
-import 'package:fitness_app/app/view/register/register_page1.dart';
+import 'package:fitness_app/app/view/register/view/register_page1.dart';
 import 'package:fitness_app/widgets/register_widgets/textformfield_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
-import '../../../utils/color.dart';
-import '../../../utils/text_constanst.dart';
+import '../../../../utils/color.dart';
+import '../../../../utils/text_constanst.dart';
 
 class RegisterPageTwo extends StatelessWidget {
   const RegisterPageTwo({super.key});
@@ -69,7 +69,7 @@ class RegisterPageTwo extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Get.to(const RegisterScreen());
+                      Get.to( RegisterScreen());
                     },
                     child: const Text(
                       "Next",

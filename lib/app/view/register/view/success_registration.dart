@@ -2,8 +2,8 @@ import 'package:fitness_app/app/view/home/homepage.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../utils/color.dart';
-import '../../../utils/text_constanst.dart';
+import '../../../../utils/color.dart';
+import '../../../../utils/text_constanst.dart';
 
 
 class SuccessRegistrationScreen extends StatelessWidget {

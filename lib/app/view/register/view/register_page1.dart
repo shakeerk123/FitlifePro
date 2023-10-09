@@ -1,30 +1,25 @@
+import 'package:fitness_app/app/view/register/controller/register_con.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:fitness_app/app/view/home/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 
-import '../../../utils/color.dart';
-import '../../../utils/text_constanst.dart';
-import '../../../widgets/common_widgets/gradientShade.dart';
-import '../../../widgets/register_widgets/textformfield_widget.dart';
+import '../../../../utils/color.dart';
+import '../../../../utils/text_constanst.dart';
+import '../../../../widgets/common_widgets/gradientShade.dart';
+import '../../../../widgets/register_widgets/textformfield_widget.dart';
 
-class RegisterScreen extends StatefulWidget {
-  const RegisterScreen({super.key});
-
-  @override
-  State<RegisterScreen> createState() => _RegisterScreenState();
-}
-
-class _RegisterScreenState extends State<RegisterScreen> {
-  bool _isObscure = true;
-
+class RegisterScreen extends GetView<RegisterController> {
+  
   @override
   Widget build(BuildContext context) {
+    Get.put(RegisterController());
     return SafeArea(
       child: Scaffold(
         body: ListView(children: [
           Form(
+            key: controller.formKey,
             // Wrap the TextFields with a Form widget
             child: Column(
               children: [
@@ -65,24 +60,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   keyboardType: TextInputType.emailAddress,
                 ),
                 TextFieldWidget(
+                  validator: (value){
+                    return controller.validatePassword(value!);
+                  },
+                  controller: controller.emailController,
+                  onSaved: (value) {
+                    controller.password = value!;
+                  },
                   prefixicon: const Icon(IconlyLight.lock),
                   text: 'Password',
-                  obscureText: _isObscure,
-                  suffixicon: IconButton(
-                    splashColor: Colors.transparent,
-                    hoverColor: Colors.transparent,
-                    icon: Icon(
-                      
-                      _isObscure ? Icons.visibility : Icons.visibility_off,
-                      color:
-                          Colors.grey, // You can customize the icon color here.
-                    ),
-                    onPressed: () {
-                      setState(() {
-                        _isObscure = !_isObscure; // Toggle password visibility.
-                      });
-                    },
-                  ),
+                 // obscureText: _isObscure,
+                // suffixicon: IconButton(
+                //   splashColor: Colors.transparent,
+                //   hoverColor: Colors.transparent,
+                //   icon: Icon(
+                //     
+                //     _isObscure ? Icons.visibility : Icons.visibility_off,
+                //     color:
+                //         Colors.grey, // You can customize the icon color here.
+                //   ),
+                //   onPressed: () {
+                //    
+                //   },
+                // ),
                 ),
                 const SizedBox(
                   height: 20,
@@ -103,7 +103,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             BorderRadius.circular(70), // Rounded border
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      controller.checkLogin();
+                    },
                     child: const Text(
                       "Register",
                       style: FontConstants.smallthinBold,
@@ -134,7 +136,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "Already have an account?",
+                      "Already have an account ?",
                       style: FontConstants.title,
                     ),
                     InkWell(

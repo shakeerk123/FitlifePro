@@ -13,7 +13,7 @@ class GridWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
       child: GridView(
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           mainAxisSpacing: 25,
