@@ -59,6 +59,12 @@ class FontConstants {
     fontWeight: FontWeight.bold,
     color: Colors.black,
   );
+  static const TextStyle namesmallSize2 = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: Colors.black,
+  );
   static const TextStyle namesmallSizewhite = TextStyle(
     fontFamily:"Poppins" ,
     fontSize: 22,

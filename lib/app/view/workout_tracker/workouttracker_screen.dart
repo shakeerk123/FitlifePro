@@ -20,7 +20,7 @@ class WorkoutScreen extends StatelessWidget {
             Stack(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 80, left: 45, right: 45),
+                  padding: const EdgeInsets.only(top: 40, left: 45, right: 45),
                   child: Container(
                     width: double.infinity,
                     color: Colors
@@ -28,26 +28,10 @@ class WorkoutScreen extends StatelessWidget {
                     child: Stack(
                       alignment: Alignment.bottomCenter,
                       children: [
-                        // Workout animation
-                        Lottie.asset(AppPaths.particleLottie, width: 400),
                         Image.asset(AppPaths.workoutvectorImage,
-                            width: 160), // Particle animation
+                            width: 190), // Particle animation
                       ],
                     ),
-                  ),
-                ),
-                Positioned(
-                  top: 30,
-                  left: 0,
-                  right: 0,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Text(
-                        "Workout",
-                        style: FontConstants.namesmallSizewhite,
-                      ),
-                    ],
                   ),
                 ),
               ],
