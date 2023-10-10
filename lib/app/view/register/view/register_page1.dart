@@ -18,7 +18,7 @@ class RegisterScreen extends GetView<RegisterController> {
     return SafeArea(
       child: Scaffold(
         body: ListView(children: [
-          Form(
+          Form(autovalidateMode:AutovalidateMode.onUserInteraction ,
             key: controller.formKey,
             // Wrap the TextFields with a Form widget
             child: Column(
@@ -54,7 +54,14 @@ class RegisterScreen extends GetView<RegisterController> {
                   prefixicon: Icon(IconlyLight.profile),
                   text: 'Last Name',
                 ),
-                const TextFieldWidget(
+                 TextFieldWidget(
+                  validator: (value){
+                    return controller.validateEmail(value!);
+                  },
+                  controller: controller.passwordContoller,
+                  onSaved: (value) {
+                    controller.email = value!;
+                  },
                   prefixicon: Icon(IconlyLight.message),
                   text: 'Email',
                   keyboardType: TextInputType.emailAddress,
@@ -105,6 +112,8 @@ class RegisterScreen extends GetView<RegisterController> {
                     ),
                     onPressed: () {
                       controller.checkLogin();
+                      print(controller.password,);
+                      print(controller.email,);
                     },
                     child: const Text(
                       "Register",

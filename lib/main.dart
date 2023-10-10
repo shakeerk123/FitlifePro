@@ -1,6 +1,7 @@
 
 import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
 import 'package:fitness_app/app/view/register/view/register_page1.dart';
+import 'package:fitness_app/app/view/workout_details/ui/workout_detail_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) { 
     return   GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home:RegisterScreen(),
+      home:WorkoutDetails(),
     );
   }
 }

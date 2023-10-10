@@ -11,6 +11,7 @@ class AppPaths {
   static const String successRegisterImage = '${imagePath}Group.png';
   static const String weightImage = '${imagePath}Weights.gif';
   static const String workoutvectorImage = '${imagePath}barbell.png';
+  static const String workoutrope = '${imagePath}Vector (4).png';
   static const String particleLottie = '${imagePath}overlay (2).json';
 
   // Fonts
