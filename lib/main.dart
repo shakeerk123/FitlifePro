@@ -3,7 +3,6 @@ import 'package:fitness_app/app/view/description_workout/workout_description.dar
 import 'package:fitness_app/app/view/login/login_screen.dart';
 import 'package:fitness_app/app/view/register/view/register_page1.dart';
 import 'package:fitness_app/app/view/workout_details/ui/workout_detail_screen.dart';
-import 'package:fitness_app/utils/route_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -24,9 +23,13 @@ class MyApp extends StatelessWidget {
     
     return   GetMaterialApp(
       debugShowCheckedModeBanner: false,
+<<<<<<< HEAD
      // initialRoute: "/home",
      // getPages: appRoutes(),
       home: LoginScreen(),
+=======
+      home:WorkoutDescription(),
+>>>>>>> parent of f6497d1 (getx route added)
     );
   }
 }
