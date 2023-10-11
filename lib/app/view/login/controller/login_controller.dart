@@ -3,17 +3,17 @@
 
 // import '../../../controller/globalform.dart/global.dart';
 
-// class RegisterController extends GetxController {
+// class LoginController extends GetxController {
+  
 //   var isPasswordHidden = true.obs;
 
-//   late TextEditingController firstNameController,
-//       lastNameController,
+//   late TextEditingController 
+      
 //       emailController,
 //       passwordContoller;
 //   var email = "";
 //   var password = "";
-//   var firstName = "";
-//   var lastName = "";
+  
 
 //   @override
 //   void onInit() {
@@ -21,8 +21,7 @@
   
 //     emailController = TextEditingController();
 //     passwordContoller = TextEditingController();
-//     firstNameController = TextEditingController();
-//     lastNameController = TextEditingController();
+    
     
 //   }
 
@@ -30,49 +29,12 @@
 //   void onClose() {
 //     emailController.dispose();
 //     passwordContoller.dispose();
-//     firstNameController.dispose();
-//     lastNameController.dispose();
+    
 //   }
 
-//   String? validateFirstName(String value) {
-//   if (value.isEmpty) {
-//     return "First name is required";
-//   }
+ 
 
-//   if (value.length < 2) {
-//     return "First name must be at least 2 characters long";
-//   }
 
-//   if (value.length > 9) {
-//     return "First name cannot exceed 9 characters";
-//   }
-
-//   if (!RegExp(r"^[a-zA-Z'-]+$").hasMatch(value)) {
-//     return "Invalid characters in first name";
-//   }
-
-//   return null;
-// }
-
-// String? validateLastName(String value) {
-//   if (value.isEmpty) {
-//     return "Last name is required";
-//   }
-
-//   if (value.length < 2) {
-//     return "Last name must be at least 2 characters long";
-//   }
-
-//   if (value.length > 9) {
-//     return "Last name cannot exceed 9 characters";
-//   }
-
-//   if (!RegExp(r"^[a-zA-Z'-]+$").hasMatch(value)) {
-//     return "Invalid characters in last name";
-//   }
-
-//   return null;
-// }
 
 
 

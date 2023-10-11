@@ -1,6 +1,6 @@
-
 import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
 import 'package:fitness_app/app/view/description_workout/workout_description.dart';
+import 'package:fitness_app/app/view/login/login_screen.dart';
 import 'package:fitness_app/app/view/register/view/register_page1.dart';
 import 'package:fitness_app/app/view/workout_details/ui/workout_detail_screen.dart';
 import 'package:fitness_app/utils/route_constants.dart';
@@ -21,11 +21,12 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) { 
+    
     return   GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/home",
-      getPages: appRoutes(),
-      
+     // initialRoute: "/home",
+     // getPages: appRoutes(),
+      home: LoginScreen(),
     );
   }
 }

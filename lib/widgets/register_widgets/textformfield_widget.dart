@@ -7,7 +7,7 @@ class TextFieldWidget extends StatelessWidget {
   final TextEditingController? controller;
   final TextInputType? keyboardType;
   final Icon prefixicon;
-  final IconButton? suffixicon;
+  final InkWell? suffixicon;
   final String text;
   final bool? obscureText;
   final void Function(String?)? onSaved;

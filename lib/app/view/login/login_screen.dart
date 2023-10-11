@@ -1,3 +1,5 @@
+import 'package:fitness_app/app/view/login/controller/login_controller.dart';
+import 'package:fitness_app/app/view/register/view/register_page1.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:fitness_app/app/view/home/homepage.dart';
 import 'package:flutter/material.dart';
@@ -9,23 +11,18 @@ import '../../../utils/text_constanst.dart';
 import '../../../widgets/common_widgets/gradientShade.dart';
 import '../../../widgets/register_widgets/textformfield_widget.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginScreen extends GetView<LoginController> {
   const LoginScreen({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
-}
-
-class _LoginScreenState extends State<LoginScreen> {
-  bool _isObscure = true;
-
-  @override
   Widget build(BuildContext context) {
+    Get.put(LoginController());
     return SafeArea(
       child: Scaffold(
         body: ListView(children: [
           Form(
-            // Wrap the TextFields with a Form widget
+            autovalidateMode: AutovalidateMode.onUserInteraction,
+          key: controller.formKey,
             child: Column(
               children: [
                 const Padding(
@@ -51,28 +48,40 @@ class _LoginScreenState extends State<LoginScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                const TextFieldWidget(
+                 TextFieldWidget(
+                  validator: (value) {
+                    return controller.validateEmail(value!);
+                  },
+                  controller: controller.passwordContoller,
+                  onSaved: (value) {
+                    controller.email = value!;
+                  },
                   prefixicon: Icon(IconlyLight.message),
                   text: 'Email',
                   keyboardType: TextInputType.emailAddress,
                 ),
-                TextFieldWidget(
-                  prefixicon: const Icon(IconlyLight.lock),
-                  text: 'Password',
-                  obscureText: _isObscure,
-                  suffixicon: IconButton(
-                    icon: Icon(
-                      _isObscure ? Icons.visibility : Icons.visibility_off,
-                      color:
-                          Colors.grey, // You can customize the icon color here.
+                 TextFieldWidget(
+                      validator: (value) {
+                        return controller.validatePassword(value!);
+                      },
+                      controller: controller.emailController,
+                      onSaved: (value) {
+                        controller.password = value!;
+                      },
+                      prefixicon: const Icon(IconlyLight.lock),
+                      text: 'Password',
+                      obscureText: controller.isPasswordHidden.value,
+                      suffixicon: InkWell(
+                        child: Icon(controller.isPasswordHidden.value ?
+                          Icons.visibility : Icons.visibility_off,
+                          color: Colors.grey,
+                        ),
+                        onTap: () {
+                          controller.isPasswordHidden.value =
+                              !controller.isPasswordHidden.value;
+                        },
+                      ),
                     ),
-                    onPressed: () {
-                      setState(() {
-                        _isObscure = !_isObscure; // Toggle password visibility.
-                      });
-                    },
-                  ),
-                ),
                 const SizedBox(
                   height: 40,
                 ),
@@ -104,7 +113,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             BorderRadius.circular(70), // Rounded border
                       ),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      controller.checkLogin();
+                    },
                     child: const Text(
                       "Login",
                       style: FontConstants.smallthinBold,
@@ -140,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.to(const HomeScreen());
+                        Get.to(const RegisterScreen());
                       },
                       child: const GradientShade(
                         color1: FitnessAppColors.logoColor3,
