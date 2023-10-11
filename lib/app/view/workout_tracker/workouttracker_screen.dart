@@ -1,4 +1,5 @@
 import 'package:fitness_app/app/view/home/homepage.dart';
+import 'package:fitness_app/app/view/workout_details/ui/workout_detail_screen.dart';
 import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -61,7 +62,7 @@ class WorkoutScreen extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          Get.to(const HomeScreen());
+                          Get.toNamed("/details");
                         },
                         child: const HomePageCard(
                           colour:
