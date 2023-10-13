@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),
-      home: LoginScreen(),
+      home: GnavNavigation(),
     );
   }
 }
