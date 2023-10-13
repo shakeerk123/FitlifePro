@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app/view/register/controller/register_con.dart';
+import 'app/view/workout_details/ui/sliver.dart';
 
 
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),
-      home: GnavNavigation(),
+      home: WorkoutDetailstwoo(),
     );
   }
 }
