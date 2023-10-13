@@ -23,13 +23,9 @@ class MyApp extends StatelessWidget {
     
     return   GetMaterialApp(
       debugShowCheckedModeBanner: false,
-<<<<<<< HEAD
      // initialRoute: "/home",
      // getPages: appRoutes(),
       home: LoginScreen(),
-=======
-      home:WorkoutDescription(),
->>>>>>> parent of f6497d1 (getx route added)
     );
   }
 }
