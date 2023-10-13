@@ -69,7 +69,7 @@ class RegisterPageTwo extends StatelessWidget {
                       ),
                     ),
                     onPressed: () {
-                      Get.to( RegisterScreen());
+                     
                     },
                     child: const Text(
                       "Next",
