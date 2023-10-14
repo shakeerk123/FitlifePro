@@ -1,6 +1,8 @@
 import 'dart:ui';
+import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:iconly/iconly.dart';
 import '../../utils/color.dart';
 import '../../utils/path_constants.dart';
@@ -20,7 +22,7 @@ class WorkoutDetailsAppBar extends StatelessWidget {
       stretch: true,
       flexibleSpace: FlexibleSpaceBar(
         background: Image.asset(
-          AppPaths.workoutvectorImage,
+          AppPaths.gymhead,
           fit: BoxFit.cover,
         ),
         stretchModes: const [
@@ -53,22 +55,16 @@ class WorkoutDetailsAppBar extends StatelessWidget {
       leadingWidth: 80.0,
       leading: Container(
         margin: const EdgeInsets.only(left: 24.0,top: 20),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(56.0),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 3.0, sigmaY: 3.0),
-            child: Container(
-              height: 53.0,
-              width: 53.0,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white.withOpacity(0.20),
-              ),
-              child:
-                 const Icon(IconlyLight.arrow_left_2),
-            ),
+        child: Container(
+          height: 53.0,
+          width: 53.0,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            
           ),
+          child:
+             IconButton(icon: Icon(IconlyLight.arrow_left_2), onPressed: () { Get.to(GnavNavigation()); },),
         ),
       ),
     );

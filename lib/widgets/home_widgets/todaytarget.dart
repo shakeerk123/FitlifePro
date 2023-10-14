@@ -15,14 +15,7 @@ class TodayTargetWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: FitnessAppColors.logoColor2,
-          borderRadius: BorderRadius.circular(30),boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.withOpacity(0.5), // Shadow color
-                          spreadRadius: 1, // Spread radius
-                          blurRadius: 7, // Blur radius
-                          offset: const Offset(0, 0), // Offset
-                        ),
-                      ],
+          borderRadius: BorderRadius.circular(30),
         ),
         width: 400,
         height: 80,
@@ -35,14 +28,7 @@ class TodayTargetWidget extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
-            boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.withOpacity(0.5), // Shadow color
-                          spreadRadius: 1, // Spread radius
-                          blurRadius: 7, // Blur radius
-                          offset: const Offset(0, 0), // Offset
-                        ),
-                      ],
+            
           ),
           child: const Padding(
             padding: EdgeInsets.all(3.0),

@@ -146,6 +146,13 @@ class FontConstants {
     color: Colors.white,
     letterSpacing:0.2
   );
+  static const TextStyle cardsubtitle = TextStyle(
+    fontFamily:"Poppins" ,
+    fontSize:12,
+    
+    color: Colors.white,
+    letterSpacing:0.5
+  );
   static const TextStyle gnav = TextStyle(
     fontFamily:"Poppins" ,
     fontSize:10,
@@ -182,6 +189,12 @@ class FontConstants {
     color: Colors.white,
     letterSpacing:0.2
   );
+  static  BoxShadow myBoxShadow = BoxShadow(
+  color: Colors.grey.withOpacity(0.5),
+  spreadRadius: 1,
+  blurRadius: 7,
+  offset: Offset(0, 0),
+);
    static const TextStyle subTitle = TextStyle(
     fontFamily:"Poppins" ,
     fontSize:12,

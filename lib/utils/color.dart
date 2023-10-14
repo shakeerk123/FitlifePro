@@ -17,5 +17,6 @@ class FitnessAppColors {
   static const Color card2 = Color.fromARGB(255, 211, 215, 236); //brand colors
   static const Color card3 = Color.fromARGB(255, 211, 215, 236); //brand colors
   static const Color progressIndicator = Color.fromARGB(255, 41, 74, 238); //brand colors
-
+ 
+ 
 }

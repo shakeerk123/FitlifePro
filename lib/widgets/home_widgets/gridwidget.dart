@@ -20,22 +20,14 @@ class GridWidget extends StatelessWidget {
           crossAxisSpacing: 25,
           crossAxisCount: 2,
         ),
-        shrinkWrap: true, // Add this line to prevent infinite height 
-        physics:
-            const NeverScrollableScrollPhysics(), // Disable scrolling
+        shrinkWrap: true, // Add this line to prevent infinite height
+        physics: const NeverScrollableScrollPhysics(), // Disable scrolling
         children: [
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(30),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5), // Shadow color
-                  spreadRadius: 1, // Spread radius
-                  blurRadius: 7, // Blur radius
-                  offset: const Offset(0, 0), // Offset
-                ),
-              ],
+              boxShadow: [FontConstants.myBoxShadow],
             ),
             child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -59,16 +51,9 @@ class GridWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(30),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5), // Shadow color
-                  spreadRadius: 1, // Spread radius
-                  blurRadius: 7, // Blur radius
-                  offset: const Offset(0, 0), // Offset
-                ),
-              ],
+              boxShadow: [FontConstants.myBoxShadow],
             ),
-            child:  const Column(
+            child: const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GradientShade(
@@ -90,14 +75,7 @@ class GridWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(30),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5), // Shadow color
-                  spreadRadius: 1, // Spread radius
-                  blurRadius: 7, // Blur radius
-                  offset: const Offset(0, 0), // Offset
-                ),
-              ],
+              boxShadow: [FontConstants.myBoxShadow],
             ),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, top: 15),
@@ -117,7 +95,6 @@ class GridWidget extends StatelessWidget {
                     gradientText: '8 Litres',
                     style: FontConstants.title2,
                   ),
-                 
                   Padding(
                     padding: const EdgeInsets.only(left: 30),
                     child: Center(
@@ -126,8 +103,7 @@ class GridWidget extends StatelessWidget {
                       lineWidth: 12,
                       percent: 0.4,
                       progressColor: FitnessAppColors.logoColor,
-                      backgroundColor:
-                          const Color.fromARGB(255, 245, 240, 240),
+                      backgroundColor: const Color.fromARGB(255, 245, 240, 240),
                       circularStrokeCap: CircularStrokeCap.round,
                       center: const Text(
                         "4 litres\n left",
@@ -143,14 +119,7 @@ class GridWidget extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(30),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.5), // Shadow color
-                  spreadRadius: 1, // Spread radius
-                  blurRadius: 7, // Blur radius
-                  offset: const Offset(0, 0), // Offset
-                ),
-              ],
+              boxShadow: [FontConstants.myBoxShadow],
             ),
             child: Padding(
               padding: const EdgeInsets.only(left: 15, top: 15),
@@ -170,7 +139,6 @@ class GridWidget extends StatelessWidget {
                     gradientText: '760 kCal',
                     style: FontConstants.title2,
                   ),
-                 
                   Padding(
                     padding: const EdgeInsets.only(left: 30),
                     child: Center(
@@ -179,8 +147,7 @@ class GridWidget extends StatelessWidget {
                       lineWidth: 12,
                       percent: 0.8,
                       progressColor: FitnessAppColors.logoColor,
-                      backgroundColor:
-                          const Color.fromARGB(255, 245, 240, 240),
+                      backgroundColor: const Color.fromARGB(255, 245, 240, 240),
                       circularStrokeCap: CircularStrokeCap.round,
                       center: const Text(
                         "230kCal\n left",

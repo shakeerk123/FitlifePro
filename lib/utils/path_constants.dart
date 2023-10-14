@@ -13,6 +13,13 @@ class AppPaths {
   static const String workoutvectorImage = '${imagePath}gym.jpg';
   static const String workoutrope = '${imagePath}Vector (4).png';
   static const String particleLottie = '${imagePath}overlay (2).json';
+  static const String gym1 = '${imagePath}gym1.jpg';
+  static const String gym2 = '${imagePath}gym2.jpg';
+  static const String gym3 = '${imagePath}gym3.jpg';
+  static const String gym4 = '${imagePath}gym4.jpg';
+  static const String gym5 = '${imagePath}gym5.jpg';
+  static const String gym6 = '${imagePath}gym6.jpg';
+  static const String gymhead = '${imagePath}gymhead.jpg';
 
   // Fonts
   static const String defaultFont = '${fontPath}Roboto-Regular.ttf';
