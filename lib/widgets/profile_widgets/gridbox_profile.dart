@@ -20,7 +20,7 @@ class GridBoxProfile extends StatelessWidget {
       width: 100,
       height: 80,
       decoration: BoxDecoration(
-        borderRadius: BorderRadiusDirectional.circular(20),
+        borderRadius: BorderRadiusDirectional.circular(10),
         color: Colors.white70,
         boxShadow: [
           BoxShadow(

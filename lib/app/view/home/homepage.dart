@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:fitness_app/utils/color.dart'; // Note the corrected import
+// Note the corrected import
 import 'package:fitness_app/utils/path_constants.dart';
+import 'package:fitness_app/widgets/workout_details/workout_card.dart';
 import 'package:flutter/material.dart';
 import '../../../utils/text_constanst.dart';
 import '../../../widgets/home_widgets/gridwidget.dart';
-import '../../../widgets/home_widgets/homepagemaincard.dart';
 import '../../../widgets/home_widgets/todaytarget.dart';
 import '../../../widgets/home_widgets/welcome_widget.dart';
 import '../../../widgets/home_widgets/workout_widgets.dart';
@@ -20,6 +20,7 @@ class HomeScreen extends StatelessWidget {
         body: ListView(
           physics: const BouncingScrollPhysics(),
           children: [
+            const SizedBox(height: 20,),
             const WelcomeWidget(),
             const SizedBox(height: 10),
 
@@ -30,31 +31,15 @@ class HomeScreen extends StatelessWidget {
                 viewportFraction: 0.8,
                 enableInfiniteScroll: true,
                 reverse: false,
-                autoPlay: true,
-                autoPlayInterval: const Duration(seconds: 3),
-                autoPlayAnimationDuration: const Duration(milliseconds: 900),
-                autoPlayCurve: Curves.fastOutSlowIn,
+                autoPlay: false,
+               
                 scrollDirection: Axis.horizontal,
+                enlargeCenterPage: true
               ),
               items: const [
-                HomePageCard(
-                  colour: FitnessAppColors.card1,
-                  imagePath: 'assets/images/Layer 5.png',
-                  subTitle: '200 Cal Burn | 18 min',
-                  title: 'Fullbody Workouts',
-                ),
-                HomePageCard(
-                  colour: FitnessAppColors.card1,
-                  imagePath: 'assets/images/Vector (1).png',
-                  subTitle: '160 Cal Burn | 13 min',
-                  title: 'Lowerbody Workouts',
-                ),
-                HomePageCard(
-                  colour: FitnessAppColors.card1,
-                  imagePath: 'assets/images/Vector (2).png',
-                  subTitle: '180 Cal Burn | 20 min',
-                  title: 'Ab Workouts',
-                ),
+                WorkoutCard(title: "Warmup", subtitle: "5 workouts", imagePath: AppPaths.warmup),
+                WorkoutCard(title: "Fullbody", subtitle: "9 workouts", imagePath: AppPaths.fullbody),
+                WorkoutCard(title: "Strenthen", subtitle: "4 workouts", imagePath: AppPaths.girl1),
                 // Add more cards as needed
               ],
             ),

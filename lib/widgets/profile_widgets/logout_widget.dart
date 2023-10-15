@@ -23,7 +23,7 @@ class LogoutWidget extends StatelessWidget {
                 offset: const Offset(0, 0), // Offset
               ),
             ],
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(10),
             color: Colors.white70),
         child: const Padding(
           padding: EdgeInsets.symmetric(vertical: 20),

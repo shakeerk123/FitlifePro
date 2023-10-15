@@ -193,7 +193,7 @@ class FontConstants {
   color: Colors.grey.withOpacity(0.5),
   spreadRadius: 1,
   blurRadius: 7,
-  offset: Offset(0, 0),
+  offset: const Offset(0, 0),
 );
    static const TextStyle subTitle = TextStyle(
     fontFamily:"Poppins" ,

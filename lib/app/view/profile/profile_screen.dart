@@ -71,7 +71,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           offset: const Offset(0, 0), // Offset
                         ),
                       ],
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(10),
                       color: Colors.white70),
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 20),

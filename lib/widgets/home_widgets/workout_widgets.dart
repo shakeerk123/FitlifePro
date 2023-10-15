@@ -28,7 +28,7 @@ class WorkoutWidget extends StatelessWidget {
         width: double.infinity,
         height: 95,
         decoration: BoxDecoration(
-            color: Colors.white, borderRadius: BorderRadius.circular(30)),
+            color: Colors.white70, borderRadius: BorderRadius.circular(10)),
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           ClipOval(
             child: CircleAvatar(

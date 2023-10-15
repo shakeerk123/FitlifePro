@@ -15,7 +15,7 @@ class TodayTargetWidget extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: FitnessAppColors.logoColor2,
-          borderRadius: BorderRadius.circular(30),
+          borderRadius: BorderRadius.circular(10),
         ),
         width: 400,
         height: 80,
@@ -27,7 +27,7 @@ class TodayTargetWidget extends StatelessWidget {
           height: 40,
           decoration: BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.circular(30),
+            borderRadius: BorderRadius.circular(10),
             
           ),
           child: const Padding(

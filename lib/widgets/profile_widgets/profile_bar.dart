@@ -15,13 +15,9 @@ class ProfileBarTop extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Container(
-            decoration: BoxDecoration(
-                color: FitnessAppColors.box,
-                borderRadius: BorderRadius.circular(10)),
-            child: IconButton(
-                onPressed: () {},
-                icon: const Icon(IconlyLight.arrow_left_2))),
+         const SizedBox(
+          width: 40,
+        ),
         Text(
           title,
           style: FontConstants.namesmallSize,

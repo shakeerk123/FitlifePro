@@ -1,4 +1,3 @@
-import 'package:fitness_app/utils/path_constants.dart';
 import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 

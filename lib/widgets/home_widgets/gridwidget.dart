@@ -26,7 +26,7 @@ class GridWidget extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
               boxShadow: [FontConstants.myBoxShadow],
             ),
             child: const Column(
@@ -50,7 +50,7 @@ class GridWidget extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
               boxShadow: [FontConstants.myBoxShadow],
             ),
             child: const Column(
@@ -74,7 +74,7 @@ class GridWidget extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
               boxShadow: [FontConstants.myBoxShadow],
             ),
             child: Padding(
@@ -118,7 +118,7 @@ class GridWidget extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(10),
               boxShadow: [FontConstants.myBoxShadow],
             ),
             child: Padding(

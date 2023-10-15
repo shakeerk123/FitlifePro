@@ -19,7 +19,12 @@ class AppPaths {
   static const String gym4 = '${imagePath}gym4.jpg';
   static const String gym5 = '${imagePath}gym5.jpg';
   static const String gym6 = '${imagePath}gym6.jpg';
+  static const String gymmen = '${imagePath}gymmen.jpg';
   static const String gymhead = '${imagePath}gymhead.jpg';
+  static const String warmup = '${imagePath}warmup.jpg';
+  static const String fullbody = '${imagePath}fullbody.jpg';
+  static const String girl1 = '${imagePath}girl1.jpg';
+  static const String jumpingJack = '${imagePath}jumpingjack.gif';
 
   // Fonts
   static const String defaultFont = '${fontPath}Roboto-Regular.ttf';
