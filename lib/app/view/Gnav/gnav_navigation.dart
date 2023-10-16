@@ -1,31 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:iconly/iconly.dart';
-
 import '../../../utils/text_constanst.dart';
+import '../../controller/gnav_controller.dart';
 import '../home/homepage.dart';
 import '../profile/profile_screen.dart';
 import '../workout_tracker/workouttracker_screen.dart';
 
-class GnavNavigation extends StatefulWidget {
-  const GnavNavigation({Key? key}) : super(key: key);
-
-  @override
-  // ignore: library_private_types_in_public_api
-  _GnavNavigationState createState() => _GnavNavigationState();
-}
-
-class _GnavNavigationState extends State<GnavNavigation> {
-  int _currentIndex = 0;
-
-  final List<Widget> _screens = const [
-    HomeScreen(),
-    WorkoutScreen(),
-    ProfileScreen(),
-  ];
-
+class GnavNavigation extends GetView<GnavController> {
   @override
   Widget build(BuildContext context) {
+    Get.put(GnavController());
     return SafeArea(
       child: Scaffold(
         bottomNavigationBar: Container(
@@ -54,19 +40,24 @@ class _GnavNavigationState extends State<GnavNavigation> {
                   text: "Profile",
                 ),
               ],
-              selectedIndex: _currentIndex,
+              selectedIndex:
+                  controller.currentIndex.value, // Use the controller's value
               onTabChange: (index) {
-                setState(() {
-                  _currentIndex = index;
-                });
+                controller
+                    .changeTabIndex(index); // Update the controller's value
               },
             ),
           ),
         ),
-        body: IndexedStack(
-          index: _currentIndex,
-          children: _screens,
-        ),
+        body: Obx(() => IndexedStack(
+              index:
+                  controller.currentIndex.value, // Use the controller's value
+              children: const [
+                HomeScreen(),
+                WorkoutScreen(),
+                ProfileScreen(),
+              ],
+            )),
       ),
     );
   }
