@@ -26,14 +26,38 @@ class WorkoutOptions extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Fullbody Workout',
+                      'Beginner Workouts',
                       style: FontConstants.thinBold,
                     ),
                     SizedBox(height: 16.0),
                     ListTile(
                       trailing: Icon(IconlyLight.arrow_right_2),
                       title: Text(
-                        "Warm Up",
+                        "Abs",
+                        style: FontConstants.title,
+                      ),
+                      subtitle: Text("12 min"),
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage('assets/images/abs1.jpg'),
+                        radius: 30,
+                      ),
+                    ),
+                    ListTile(
+                      trailing: Icon(IconlyLight.arrow_right_2),
+                      title: Text(
+                        "Chest",
+                        style: FontConstants.title,
+                      ),
+                      subtitle: Text("13 min"),
+                      leading: CircleAvatar(
+                        backgroundImage: AssetImage("assets/images/chest.jpg"),
+                        radius: 30,
+                      ),
+                    ),
+                    ListTile(
+                      trailing: Icon(IconlyLight.arrow_right_2),
+                      title: Text(
+                        "Arm",
                         style: FontConstants.title,
                       ),
                       subtitle: Text("03:00"),
@@ -45,88 +69,28 @@ class WorkoutOptions extends StatelessWidget {
                     ListTile(
                       trailing: Icon(IconlyLight.arrow_right_2),
                       title: Text(
-                        "Warm Up",
+                        "Leg",
                         style: FontConstants.title,
                       ),
                       subtitle: Text("03:00"),
                       leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
+                        backgroundImage: AssetImage("assets/images/leg.jpg"),
                         radius: 30,
                       ),
                     ),
                     ListTile(
                       trailing: Icon(IconlyLight.arrow_right_2),
                       title: Text(
-                        "Warm Up",
+                        "Shoulder & Back",
                         style: FontConstants.title,
                       ),
                       subtitle: Text("03:00"),
                       leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
+                        backgroundImage: AssetImage("assets/images/back.jpg"),
                         radius: 30,
                       ),
                     ),
-                    ListTile(
-                      trailing: Icon(IconlyLight.arrow_right_2),
-                      title: Text(
-                        "Warm Up",
-                        style: FontConstants.title,
-                      ),
-                      subtitle: Text("03:00"),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
-                        radius: 30,
-                      ),
-                    ),
-                    ListTile(
-                      trailing: Icon(IconlyLight.arrow_right_2),
-                      title: Text(
-                        "Warm Up",
-                        style: FontConstants.title,
-                      ),
-                      subtitle: Text("03:00"),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
-                        radius: 30,
-                      ),
-                    ),
-                    ListTile(
-                      trailing: Icon(IconlyLight.arrow_right_2),
-                      title: Text(
-                        "Warm Up",
-                        style: FontConstants.title,
-                      ),
-                      subtitle: Text("03:00"),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
-                        radius: 30,
-                      ),
-                    ),
-                    ListTile(
-                      trailing: Icon(IconlyLight.arrow_right_2),
-                      title: Text(
-                        "Warm Up",
-                        style: FontConstants.title,
-                      ),
-                      subtitle: Text("03:00"),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
-                        radius: 30,
-                      ),
-                    ),
-                    ListTile(
-                      trailing: Icon(IconlyLight.arrow_right_2),
-                      title: Text(
-                        "Warm Up",
-                        style: FontConstants.title,
-                      ),
-                      subtitle: Text("03:00"),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(AppPaths.workoutImage),
-                        radius: 30,
-                      ),
-                    ),
-                  ],
+                   ],
                 ),
               ),
             ),

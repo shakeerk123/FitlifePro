@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),
-      home: WorkoutDescription(),
+      home: WorkoutOptions(),
     );
   }
 }
