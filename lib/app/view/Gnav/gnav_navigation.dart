@@ -6,12 +6,14 @@ import '../../../utils/text_constanst.dart';
 import '../../controller/gnav_controller.dart';
 import '../home/homepage.dart';
 import '../profile/profile_screen.dart';
-import '../workout_tracker/workouttracker_screen.dart';
+import '../workout_main/workouttracker_screen.dart';
 
 class GnavNavigation extends GetView<GnavController> {
+  const GnavNavigation({super.key});
+
   @override
   Widget build(BuildContext context) {
-    Get.put(GnavController());
+    
     return SafeArea(
       child: Scaffold(
         bottomNavigationBar: Container(

@@ -1,10 +1,10 @@
-import 'package:fitness_app/app/view/description_workout/description_workout.dart';
-import 'package:fitness_app/app/view/home/homepage.dart';
+import 'package:fitness_app/app/view/workout_details/workout_options.dart';
 import 'package:fitness_app/utils/color.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:fitness_app/widgets/workout_details/workout_card.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import '../../../../widgets/workout_details/wdAppBar.dart';
 
 class WorkoutScreen extends StatelessWidget {
@@ -49,20 +49,11 @@ class WorkoutScreen extends StatelessWidget {
   void _handleCardTap(BuildContext context, String title) {
     // Handle the tap event for the specific card here.
    if (title == 'Beginner') {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => WorkoutDescription()),
-    );
+    Get.to(const WorkoutOptions());
   } else if (title == 'Intermediate') {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => HomeScreen()),
-    );
+   Get.to(const WorkoutOptions());
   } else if (title == 'Advanced') {
-    Navigator.push(
-      context,
-      MaterialPageRoute(builder: (context) => WorkoutDescription()),
-    );
+    Get.to(const WorkoutOptions());
   }
     // You can also navigate to a different screen here if needed.
   }

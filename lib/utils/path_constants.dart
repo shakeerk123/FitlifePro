@@ -25,6 +25,8 @@ class AppPaths {
   static const String fullbody = '${imagePath}fullbody.jpg';
   static const String girl1 = '${imagePath}girl1.jpg';
   static const String jumpingJack = '${imagePath}jumpingjack.gif';
+  static const String transparentImage = '${imagePath}transparent.png'; // Replace with the actual path to your transparent image
+
 
   // Fonts
   static const String defaultFont = '${fontPath}Roboto-Regular.ttf';
