@@ -17,7 +17,7 @@ class FullbodyOptions extends StatelessWidget {
     final controller = Get.put(WorkoutOptionsController());
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: Container(
+        bottomNavigationBar: SizedBox(
           width: MediaQuery.of(context).size.width,
           height: 60,
           child: ElevatedButton(

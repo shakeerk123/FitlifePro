@@ -1,7 +1,5 @@
 
-import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
 import 'package:fitness_app/app/view/home/homepage.dart';
-import 'package:fitness_app/app/view/onboarding/onboarding.dart';
 
 
 import 'package:flutter/material.dart';
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) { 
     Get.put(GnavController());
-    return    GetMaterialApp(
+    return    const GetMaterialApp(
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),

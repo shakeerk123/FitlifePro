@@ -7,13 +7,15 @@ import '../../model/exercise_set.dart';
 import 'exercise_set_widget.dart';
 
 class ExercisesWidget extends StatelessWidget {
-  final ExercisesController controller = Get.put(ExercisesController()); // Initialize the GetX controller
+  final ExercisesController controller = Get.put(ExercisesController());
+
+   ExercisesWidget({super.key}); // Initialize the GetX controller
 
   @override
   Widget build(BuildContext context) => Column(children: [
-    SizedBox(height: 8),
+    const SizedBox(height: 8),
     Obx(() => buildDifficultyLevel()),
-    SizedBox(height: 8),
+    const SizedBox(height: 8),
     Padding(
       padding: const EdgeInsets.all(20.0),
       child: Obx(() => buildWorkouts()), // Observe selectedType
@@ -48,7 +50,7 @@ class ExercisesWidget extends StatelessWidget {
               behavior: HitTestBehavior.opaque,
               onTap: () => controller.selectedType.value = type,
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 8),
+                padding: const EdgeInsets.symmetric(vertical: 8),
                 child: Text(
                   name,
                   style: TextStyle(fontWeight: fontWeight, fontSize: 16),

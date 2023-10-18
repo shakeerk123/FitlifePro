@@ -6,7 +6,7 @@ import '../../model/exercise_set.dart';
 class ExerciseSetWidget extends StatelessWidget {
   final ExerciseSet exerciseSet;
 
-  const ExerciseSetWidget({
+  const ExerciseSetWidget({super.key, 
     required this.exerciseSet,
   });
 
@@ -39,9 +39,9 @@ class ExerciseSetWidget extends StatelessWidget {
       children: [
         Text(
           exerciseSet.name,
-          style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+          style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
         ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         Text('$exercises Exercises $minutes Mins'),
       ],
     );
