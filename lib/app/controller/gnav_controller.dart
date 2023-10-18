@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 class GnavController extends GetxController {
   var currentIndex = 0.obs;
 
-  GnavvController(int initialIndex) {
+  gnavvController(int initialIndex) {
     currentIndex.value = initialIndex;
   }
 

@@ -1,3 +1,4 @@
+import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 
 class ExerciseStep extends StatelessWidget {
@@ -19,13 +20,13 @@ class ExerciseStep extends StatelessWidget {
         children: [
           Text(
             "$stepNumber.",
-            style: const TextStyle(fontSize: 16.0),
+            style: FontConstants.onBoardingPara,
           ),
           const SizedBox(width: 8.0),
           Expanded(
             child: Text(
               description,
-              style: const TextStyle(fontSize: 16.0),
+              style: FontConstants.onBoardingPara,
             ),
           ),
         ],

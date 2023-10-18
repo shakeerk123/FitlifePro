@@ -15,7 +15,7 @@ class WorkoutsListtile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      trailing: Icon(IconlyLight.arrow_right_2),
+      trailing: const Icon(IconlyLight.arrow_right_2),
       title: Text(
         title,
         style: FontConstants.title,

@@ -3,11 +3,15 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fitness_app/utils/path_constants.dart';
 import 'package:fitness_app/widgets/workout_details/workout_card.dart';
 import 'package:flutter/material.dart';
+import '../../../data/exercise_sets.dart';
+import '../../../model/exercise_set.dart';
 import '../../../utils/text_constanst.dart';
+import '../../../widgets/common_widgets/exercise_set_widget.dart';
+import '../../../widgets/common_widgets/exercisewidget.dart';
 import '../../../widgets/home_widgets/gridwidget.dart';
 import '../../../widgets/home_widgets/todaytarget.dart';
 import '../../../widgets/home_widgets/welcome_widget.dart';
-import '../../../widgets/home_widgets/workout_widgets.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -64,30 +68,7 @@ class HomeScreen extends StatelessWidget {
                 style: FontConstants.thinBold,
               ),
             ),
-            const WorkoutWidget(
-              title: 'Upperbody Workout',
-              path: AssetImage(AppPaths.workoutImage),
-              percent: 0.5,
-              subTitle: '100 kCal Burn | 20 min',
-            ),
-            const WorkoutWidget(
-              title: 'Upperbody Workout',
-              path: AssetImage(AppPaths.workoutImage),
-              percent: 0.3,
-              subTitle: '100 kCal Burn | 20 min',
-            ),
-            const WorkoutWidget(
-              title: 'Upperbody Workout',
-              path: AssetImage(AppPaths.workoutImage),
-              percent: 0.7,
-              subTitle: '100 kCal Burn | 20 min',
-            ),
-            const WorkoutWidget(
-              title: 'Upperbody Workout',
-              path: AssetImage(AppPaths.workoutImage),
-              percent: 0.9,
-              subTitle: '100 kCal Burn | 20 min',
-            ),
+           ExercisesWidget(),
           ],
         ),
       ),
