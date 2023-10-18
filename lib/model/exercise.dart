@@ -6,14 +6,16 @@ class Exercise {
   final String name;
   final Duration duration;
   final int noOfReps;
-  final String videoUrl;
+  final String gifImageUrl;
   VideoPlayerController? controller;
+
+
 
   Exercise({
     required this.name,
     required this.duration,
     required this.noOfReps,
-    required this.videoUrl,
-     this.controller,
+    required this.gifImageUrl,
+    this.controller,
   });
 }

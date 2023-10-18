@@ -1,7 +1,9 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../model/exercise_set.dart';
+import 'exercise_page.dart';
 
 class ExerciseSetWidget extends StatelessWidget {
   final ExerciseSet exerciseSet;
@@ -12,7 +14,9 @@ class ExerciseSetWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => GestureDetector(
-        onTap: (){},
+        onTap: (){
+          Get.to(ExercisePage(exerciseSet : exerciseSet));
+        },
         child: Container(
           padding: const EdgeInsets.all(16),
           height: 100,
