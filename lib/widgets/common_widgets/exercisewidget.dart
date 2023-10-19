@@ -1,8 +1,9 @@
-import 'package:fitness_app/data/exercise_sets.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../app/controller/exercise_controller.dart';
+import '../../data/exercise_sets.dart';
 import '../../model/exercise_set.dart';
 import 'exercise_set_widget.dart';
 

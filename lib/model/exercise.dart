@@ -3,7 +3,9 @@
 import 'package:video_player/video_player.dart';
 
 class Exercise {
+
   final String name;
+  final String? description;
   final Duration duration;
   final int noOfReps;
   final String gifImageUrl;
@@ -11,11 +13,12 @@ class Exercise {
 
 
 
-  Exercise({
+  Exercise( {
     required this.name,
     required this.duration,
     required this.noOfReps,
     required this.gifImageUrl,
+    this.description,
     this.controller,
   });
 }

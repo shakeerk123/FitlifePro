@@ -1,5 +1,6 @@
 
-import 'package:fitness_app/app/view/home/homepage.dart';
+import 'package:fitness_app/app/view/Gnav/gnav_navigation.dart';
+import 'package:fitness_app/app/view/workout_main/workouttracker_screen.dart';
 
 
 import 'package:flutter/material.dart';
@@ -22,11 +23,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) { 
     Get.put(GnavController());
-    return    const GetMaterialApp(
+    return   GetMaterialApp(
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),
-      home: HomeScreen(),
+      home: GnavNavigation(),
     );
   }
 }

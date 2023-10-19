@@ -54,10 +54,10 @@ class GnavNavigation extends GetView<GnavController> {
         body: Obx(() => IndexedStack(
               index:
                   controller.currentIndex.value, // Use the controller's value
-              children: const [
-                HomeScreen(),
-                WorkoutScreen(),
-                ProfileScreen(),
+              children:  [
+                const HomeScreen(),
+               WorkoutScreen(),
+                const ProfileScreen(),
               ],
             )),
       ),

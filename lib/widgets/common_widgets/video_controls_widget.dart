@@ -1,3 +1,4 @@
+import 'package:fitness_app/utils/color.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/exercise.dart';
@@ -19,7 +20,7 @@ class VideoControlsWidget extends StatelessWidget {
   Widget build(BuildContext context) => Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          color: Colors.white.withOpacity(0.95),
+          color: FitnessAppColors.logoColor2,
         ),
         height: 142,
         child: Column(
@@ -51,12 +52,12 @@ class VideoControlsWidget extends StatelessWidget {
         children: [
           Text(
             title,
-            style: TextStyle(color: Colors.grey),
+            style: const TextStyle(color: Colors.black),
           ),
-          SizedBox(height: 8),
+          const SizedBox(height: 8),
           Text(
             value,
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
         ],
       );
@@ -65,16 +66,16 @@ class VideoControlsWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.fast_rewind,
               color: Colors.black87,
               size: 32,
             ),
             onPressed: onRewindVideo,
           ),
-          buildPlayButton(context),
+         //buildPlayButton(context),
           IconButton(
-            icon: Icon(
+            icon: const Icon(
               Icons.fast_forward,
               color: Colors.black87,
               size: 32,
@@ -84,20 +85,20 @@ class VideoControlsWidget extends StatelessWidget {
         ],
       );
 
-  Widget buildPlayButton(BuildContext context) {
-    final isLoading = exercise.controller == null ||
-        !exercise.controller!.value.isInitialized;
+  // Widget buildPlayButton(BuildContext context) {
+  //   final isLoading = exercise.controller == null ||
+  //       !exercise.controller!.value.isInitialized;
 
-    if (isLoading) {
-      return Center(child: CircularProgressIndicator());
-    }  else {
-      return buildButton(
-        context,
-        icon: Icon(Icons.play_arrow, size: 30, color: Colors.white),
-        onClicked: () => onTogglePlaying(true),
-      );
-    }
-  }
+  //   if (isLoading) {
+  //     return const Center(child: CircularProgressIndicator());
+  //   }  else {
+  //     return buildButton(
+  //       context,
+  //       icon: const Icon(Icons.play_arrow, size: 30, color: Colors.white),
+  //       onClicked: () => onTogglePlaying(true),
+  //     );
+  //   }
+  // }
 
   Widget buildButton(
     BuildContext context, {
@@ -107,7 +108,7 @@ class VideoControlsWidget extends StatelessWidget {
       GestureDetector(
         onTap: onClicked,
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             shape: BoxShape.circle,
             boxShadow: <BoxShadow>[
               BoxShadow(
@@ -119,7 +120,7 @@ class VideoControlsWidget extends StatelessWidget {
           ),
           child: CircleAvatar(
             radius: 24,
-            backgroundColor: Color(0xFFff6369),
+            backgroundColor: const Color(0xFFff6369),
             child: icon,
           ),
         ),

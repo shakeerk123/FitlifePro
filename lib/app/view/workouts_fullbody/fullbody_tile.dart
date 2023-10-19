@@ -17,31 +17,7 @@ class FullbodyOptions extends StatelessWidget {
     final controller = Get.put(WorkoutOptionsController());
     return SafeArea(
       child: Scaffold(
-        bottomNavigationBar: SizedBox(
-          width: MediaQuery.of(context).size.width,
-          height: 60,
-          child: ElevatedButton(
-            onPressed: () {
-              
-            },
-            style: ElevatedButton.styleFrom(
-              backgroundColor:
-                  FitnessAppColors.logoColor, // Button background color
-              shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    topRight: Radius.circular(10)), // Rounded border
-              ),
-            ),
-            child: const Padding(
-              padding: EdgeInsets.all(16.0),
-              child: Text(
-                'Start',
-                style: FontConstants.title2,
-              ),
-            ),
-          ),
-        ),
+        
         body: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: <Widget>[

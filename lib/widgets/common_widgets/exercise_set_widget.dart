@@ -1,4 +1,5 @@
 
+import 'package:fitness_app/utils/text_constanst.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -22,7 +23,7 @@ class ExerciseSetWidget extends StatelessWidget {
           height: 100,
           decoration: BoxDecoration(
             color: exerciseSet.color,
-            borderRadius: BorderRadius.circular(16),
+            borderRadius: BorderRadius.circular(5),
           ),
           child: Row(
             children: [
@@ -43,10 +44,10 @@ class ExerciseSetWidget extends StatelessWidget {
       children: [
         Text(
           exerciseSet.name,
-          style: const TextStyle(fontWeight: FontWeight.w500, fontSize: 20),
+          style: FontConstants.title3,
         ),
         const SizedBox(height: 10),
-        Text('$exercises Exercises $minutes Mins'),
+        Text('$exercises Exercises $minutes Mins',style: FontConstants.subTitle,),
       ],
     );
   }

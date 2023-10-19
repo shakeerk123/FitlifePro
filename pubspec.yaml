@@ -43,9 +43,11 @@ dependencies:
   iconly: ^1.0.1
   transparent_image: ^2.0.1
   loading_indicator: ^3.1.1
-  http: ^1.1.0
+  
   fl_chart: ^0.64.0
   video_player: ^2.7.2
+  http: ^1.1.0
+  
   
   
 
