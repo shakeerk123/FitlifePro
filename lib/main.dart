@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) { 
     Get.put(GnavController());
-    return   GetMaterialApp(
+    return   const GetMaterialApp(
       debugShowCheckedModeBanner: false,
      // initialRoute: "/home",
      // getPages: appRoutes(),
