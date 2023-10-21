@@ -46,7 +46,7 @@ class ExerciseSetWidget extends StatelessWidget {
           exerciseSet.name,
           style: FontConstants.title3,
         ),
-        const SizedBox(height: 10),
+        const SizedBox(height: 15),
         Text('$exercises Exercises $minutes Mins',style: FontConstants.subTitle,),
       ],
     );
